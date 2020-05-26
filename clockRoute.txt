@@ -1,0 +1,10 @@
+# Clock Routing command file
+START-PATH
+SOURCE NODE=buf_1x PORT=out
+DESTINATION NODE=dffsetreset PORT=CLK
+LAYERS HORIZONTAL=3 VERTICAL=4
+CHANNEL NAME=a IN=right OUT=left syn_338_ syn_339_ syn_340_
+CHANNEL NAME=b IN=left OUT=right syn_342_ syn_343_ syn_341_
+CHANNEL NAME=c IN=down OUT=up syn_324_ syn_344_ syn_345_
+CHANNEL NAME=whole IN=down OUT=up a b c
+END-PATH
